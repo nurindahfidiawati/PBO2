@@ -1,7 +1,7 @@
 import wx, datetime, time
 from PBOPR import register
 
-class LoginController(register):
+class RegisterController(register):
     def __init__(self,parent):
         register.__init__(self,parent)
     
@@ -29,6 +29,6 @@ class LoginController(register):
 
 
 app = wx.App()
-frame = LoginController(parent=None)
+frame = RegisterController(parent=None)
 frame.Show()
 app.MainLoop()
